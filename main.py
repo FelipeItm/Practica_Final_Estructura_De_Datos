@@ -151,7 +151,7 @@ if __name__ == "__main__":
                 print(estudiante.mostrar())
             print("\n--- ESTUDIANTES DE DISEÑO ---")
             for estudiante in disenadores:
-                print(estudiante.mostrar())
+                print(estudiante.mostrar_diseno())
             print("\n--- COMPUTADORES PORTATILES ---")
             for computador in computadores:
                 print(computador.mostrar_computador())
