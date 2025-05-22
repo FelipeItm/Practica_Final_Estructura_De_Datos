@@ -84,7 +84,7 @@ class Ingenieria:
         # validacion para el telefono
         while True:
             number = input("Digite el telefono del estudiante: ")
-            if number.isalnum():
+            if number.isnumeric():
                 self.set_telefono(number)
                 break
             else:
