@@ -6,6 +6,7 @@ class Diseno(Ingenieria):
         self._modalidad = modalidad
         self._materias = materias
         self._codigo = codigo
+        self.cantidad_diseno = []
 
     def get_modalidad(self):
         return self._modalidad
@@ -62,7 +63,7 @@ class Diseno(Ingenieria):
         Est_Diseno = {"Cedula": self.get_cedula(), "Nombre": self.get_nombre(), "Apellido": self.get_apellido(),
                       "Telefono": self.get_telefono(), "Modalidad": self.get_modalidad(),
                       "Cantidad de materias": self.get_materias(), "Serial": self.get_codigo()}
-        self.cantidad.append(Est_Diseno)
+        self.cantidad_diseno.append(Est_Diseno)
 
-    def mostrar(self):
-        return super().mostrar()
+    def mostrar_diseno(self):
+        return self.cantidad_diseno
