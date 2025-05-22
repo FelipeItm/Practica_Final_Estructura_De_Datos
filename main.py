@@ -133,7 +133,7 @@ if __name__ == "__main__":
                     for estudiante in disenadores:
                         if estudiante.get_cedula() == cedula_o_serial or estudiante.get_codigo() == cedula_o_serial:
                             print("Datos del estudiante:")
-                            print(estudiante.mostrar())
+                            print(estudiante.mostrar_diseno())
                             encontrado = True
                             break
                     if not encontrado:
