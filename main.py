@@ -145,19 +145,22 @@ if __name__ == "__main__":
                     print("Opción inválida. Intente de nuevo.")
 
         elif opcion_principal == "3":
-            print("\n--- INVENTARIO TOTAL ---")
-            print("\n--- ESTUDIANTES DE INGENIERIA ---")
-            for estudiante in ingenieros:
-                print(estudiante.mostrar())
-            print("\n--- ESTUDIANTES DE DISEÑO ---")
-            for estudiante in disenadores:
-                print(estudiante.mostrar_diseno())
-            print("\n--- COMPUTADORES PORTATILES ---")
-            for computador in computadores:
-                print(computador.mostrar_computador())
-            print("\n--- TABLETAS GRAFICAS ---")
-            for tableta in tabletas:
-                print(tableta.mostrar_tableta())
+            if not ingenieros and not disenadores and not tabletas and not computadores:
+                print("No hay datos en el inventario")
+            else: 
+                print("\n--- INVENTARIO TOTAL ---")
+                print("\n--- ESTUDIANTES DE INGENIERIA ---")
+                for estudiante in ingenieros:
+                    print(estudiante.mostrar())
+                print("\n--- ESTUDIANTES DE DISEÑO ---")
+                for estudiante in disenadores:
+                    print(estudiante.mostrar_diseno())
+                print("\n--- COMPUTADORES PORTATILES ---")
+                for computador in computadores:
+                    print(computador.mostrar_computador())
+                print("\n--- TABLETAS GRAFICAS ---")
+                for tableta in tabletas:
+                    print(tableta.mostrar_tableta())
 
         elif opcion_principal == "4":
             print("Saliendo del programa.")
